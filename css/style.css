@@ -601,7 +601,7 @@ margin: auto;
 .svg-close{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.btn-close:hover:focus .svg-close {
+.svg-close:hover:focus {
     fill: #ffffff;
 }
 .title-par{
@@ -761,14 +761,13 @@ border: none;
 .chekbox-svg{
 
 }
-.visually-hidden:checked span{
+.visually-hidden:checked > span{
  background-color: #404bbf;
  border: none;
  fill: #F4F4FD; ;
 }
-.priv-link{
+.priv-link {
     color: #4d5ae5; 
-
 }
 /* Кінець налаштувань модального вікна */
 
