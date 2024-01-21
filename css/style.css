@@ -490,7 +490,57 @@ margin: auto;
 .logo-par{
     margin-right: 120px;
 }
+.title-footer-form{
+    margin-bottom: 16px;
+    font-weight: 500;
+    font-size: 16px; 
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+
+}
+.form-footer{
+    display: flex;
+}
+.label-footer-form{
+    gap: 24px;
+}
+.input-footer-form{
+    width: 264px; 
+    height: 40px;
+    border: 1px solid #ffffff;
+    background-color: transparent;
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    padding-left: 16px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px; 
+    color: #ffffff;
+}
+.input-footer-form::placeholder{
+    color: #ffffff;
+}
+.subscribe-btn{
+    min-width: 165px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    background-color: #4D5AE5;
+    border: none;
+    border-radius: 4px;
+    
+}
 /* Кінець налаштувань футера */
+
 
 /* Початок налаштувань модального вікна */
 .backdrop{
@@ -540,14 +590,15 @@ margin: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.btn-close:hover:focus{
-    background-color: #404bbf; 
+.btn-close:hover,
+.btn-close:focus{
     border: none;
+    background-color: #404bbf; 
 }
 .svg-close{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-..btn-close:hover:focus svg{
+.btn-close:hover:focus svg{
     fill: #ffffff;
 }
 .title-par{
@@ -571,9 +622,7 @@ margin: auto;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border: 1px solid var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 }
-.modal-input:focus + .svg-input {
-    border-radius: 4px;
-    border: 1px solid;
+.modal-input:focus {
     border-color: #4D5AE5;
 }
 .svg-input{
@@ -630,7 +679,7 @@ margin-bottom: 8px;
     color: var(--LIGHT-SLATE, #8E8F99);
     font-size: 12px;
     line-height: 1.17;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.04em;
 }
 .priv-pol{
     color: var(--IRIS, #4D5AE5);
@@ -638,24 +687,84 @@ margin-bottom: 8px;
     line-height: 1.5;
     letter-spacing: 0.02;
    text-decoration-line: underline;
+   width: 16px;
+   height: 16px;
+   border: 1px solid rgba(46, 47, 66, 0.4); 
+   border-radius: 2px; 
+   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+   display: inline-flex; 
+   align-items: center;
+   justify-content: center;
+   fill: transparent;
+
 }
 .submit-btn{
-  color: var(--WHITE, #FFF);
-   text-align: center;
+color: #ffffff;
+text-align: center;
 font-size: 16px;
 font-weight: 500;
 line-height: 1.5; 
-letter-spacing: 0.03em;
+letter-spacing: 0.04em;
 padding: 16px 32px;
-display: inline-flex;
+display: block;
 align-items: flex-start;
+font-family: "Roboto", sans-serif;
 gap: 10px;
 border-radius: 4px;
 background: var(--IRIS, #4D5AE5);
 box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
-width: 169px;
+min-width: 169px;
 height: 56px;
 flex-shrink: 0;
+cursor: pointer;
+transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+border: none;
+}
+.txt-container{
+    margin-bottom: 16px;
+}
+.texar-com{
+    width: 100%;
+    height: 120px; 
+    font-size: 12px; 
+    line-height: 1.17;
+    letter-spacing: 0.04em; 
+    color: rgba(46, 47, 66, 0.4); 
+    border: 1px solid rgba(46, 47, 66, 0.4);
+    border-radius: 4px;
+    background-color: transparent; 
+    padding: 8px 16px; 
+    outline: transparent; 
+    resize: none; 
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.texar-com:focus{
+    border-color: #4D5AE5;
+}
+.checkbox-container{
+    margin-bottom: 24px;
+}
+.visually-hidden{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip-path: inset(100%);
+  white-space: nowrap; 
+  overflow: hidden;
+}
+.chekbox-svg{
+
+}
+.visually-hidden:checked span{
+ background-color: #404bbf;
+ border: none;
+ fill: #F4F4FD; ;
+}
+.priv-link{
+    color: #4d5ae5; 
 
 }
 /* Кінець налаштувань модального вікна */
