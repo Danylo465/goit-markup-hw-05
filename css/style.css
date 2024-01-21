@@ -768,7 +768,12 @@ border: none;
  stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 }
 .priv-link {
-    color: #4d5ae5; 
+color: var(--IRIS, #4D5AE5);
+font-family: "Roboto";
+font-size: 12px;
+line-height: 1.17;
+letter-spacing: 0.04em;
+text-decoration-line: underline;
 }
 /* Кінець налаштувань модального вікна */
 
