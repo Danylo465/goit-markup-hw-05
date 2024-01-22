@@ -43,10 +43,13 @@ h1,h2,h3,p{
     border-bottom: 1px solid #e7e9fc;
     display: flex;
     align-items: baseline;
-    height: 72px;
     box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
-
+.header-container-one{
+    display: flex;
+    align-items: baseline;
+    box-shadow:  0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
+}
 .nav-elements{
     display: flex; 
     align-items: center;
@@ -760,7 +763,7 @@ border: none;
 .chekbox-svg{
 
 }
-.visually-hidden:checked > span {
+.visually-hidden:checked + .priv-pol {
  background-color: #404bbf;
  border: none;
  fill: #F4F4FD; 
