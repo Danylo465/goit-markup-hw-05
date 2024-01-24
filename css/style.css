@@ -774,6 +774,13 @@ border: none;
     resize: none; 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.texar-com::placeholder{
+color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
+font-family: 'Roboto';
+font-size: 12px;
+line-height: 1.17; 
+letter-spacing: 0.02em;
+}
 .texar-com:focus{
     border-color: #4D5AE5;
 }      
