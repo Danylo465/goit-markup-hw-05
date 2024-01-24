@@ -625,15 +625,16 @@ margin: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.btn-close:hover > svg,
-.btn-close:focus > svg{
+.btn-close:hover,
+.btn-close:focus {
     border: none;
     background-color: #404bbf; 
 }
 .svg-close{
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
-.btn-close:hover:focus > svg {
+.btn-close:hover,
+.btn-close:focus > svg {
     fill: #ffffff;
 }
 .title-par{
@@ -731,6 +732,7 @@ width: 100%;
    align-items: center;
    justify-content: center;
    fill: transparent;
+   border: 1px solid rgba(46, 47, 66, 0.4); 
 
 }
 .submit-btn{
@@ -775,7 +777,7 @@ border: none;
     resize: none; 
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.texar-com::placeholder{
+.texar-com::placeholder {
 color: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 font-family: 'Roboto';
 font-size: 12px;
@@ -800,13 +802,11 @@ letter-spacing: 0.02em;
   overflow: hidden;
 }
 .chekbox-svg{
-
+   color: transparent;
 }
 .visually-hidden:checked + .priv-par > span {
  background-color: #404bbf;
  border: none;
- stroke-width: 1px;
- stroke: var(--NAVY-BLUE-modal, rgba(46, 47, 66, 0.40));
 }
 .visually-hidden:checked + .chekbox-svg{
     fill: #F4F4FD; 
