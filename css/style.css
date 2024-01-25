@@ -809,7 +809,7 @@ letter-spacing: 0.02em;
  background-color: #404bbf;
  border: none;
 }
-.cheked-input-box:checked + .priv-par > span {
+.cheked-input-box:checked + .priv-par span {
     fill: #F4F4FD; 
 }
 .priv-link {
