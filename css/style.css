@@ -723,6 +723,9 @@ width: 100%;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
+    display: flex;
+    flex-shrink: 0;
+    gap: 8px;
 }
 .priv-pol{
     color: var(--IRIS, #4D5AE5);
