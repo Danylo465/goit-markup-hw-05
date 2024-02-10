@@ -824,15 +824,21 @@ letter-spacing: 0.02em;
 .chekbox-svg{
    color: transparent;
 }
-.visually-hidden:checked + .priv-par > span {
+.visually-hidden:checked + .priv-par > .priv-pol {
  background-color: #404bbf;
  border: none;
+ } 
+.cheked-input-box:checked + label .priv-par {
+    background-color: #404bbf;
+    border: none;
 }
+
 .cheked-input-box:checked + .priv-par span {
     fill: #F4F4FD; 
 }
 .priv-link {
-color: var(--IRIS, #4D5AE5);
+    display: inline;
+color: #4d5ae5;
 font-family: 'Roboto', sans-serif;
 font-size: 12px;
 line-height: 1.17;
