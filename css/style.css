@@ -726,7 +726,7 @@ width: 100%;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
-    display: flex;
+    display: inline;
     flex-shrink: 0;
     gap: 8px;
 }
