@@ -825,7 +825,7 @@ letter-spacing: 0.02em;
 .chekbox-svg{
    color: transparent;
 }
-.cheked-input-box:checked + .priv-par span {
+.cheked-input-box:checked + .priv-par .priv-pol {
     border: none;
     background-color: #404bbf;
     fill: #F4F4FD; 
