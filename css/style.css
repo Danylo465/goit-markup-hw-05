@@ -632,7 +632,10 @@ margin: auto;
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 }
-.btn-close:hover,
+.btn-close:hover {
+    border: none;
+    background-color: #404bbf; 
+}
 .btn-close:focus {
     border: none;
     background-color: #404bbf; 
@@ -641,7 +644,9 @@ margin: auto;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.btn-close:hover > svg,
+.btn-close:hover > svg {
+    fill: #ffffff;
+}
 .btn-close:focus > svg {
     fill: #ffffff;
 }
@@ -823,6 +828,11 @@ letter-spacing: 0.02em;
 }
 .chekbox-svg{
    color: transparent;
+}
+.cheked-input-box:checked + .priv-par span {
+    border: none;
+    background-color: #404bbf;
+    fill: #F4F4FD; 
 }
 .visually-hidden:checked + .priv-par > .priv-pol {
  background-color: #404bbf;
