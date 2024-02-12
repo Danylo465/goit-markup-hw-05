@@ -645,7 +645,6 @@ margin: auto;
 .btn-close:focus > svg {
     fill: #ffffff;
 }
-
 .title-par{
     color: var(--NAVY-BLUE, #2E2F42);
     text-align: center;
@@ -678,6 +677,9 @@ margin: auto;
     fill: #4D5AE5;
 }
 
+.modal-input:focus {
+    border-color: #4D5AE5;
+}
 .tel-svg{
     position: absolute;
     left: 0;
@@ -746,9 +748,7 @@ margin: auto;
    border: 1px solid rgba(46, 47, 66, 0.4); 
 
 }
-.visually-hidden:focus + .priv-par > span {
-    border-color: #4D5AE5; 
-}
+
 .submit-btn{
 color: #ffffff;
 text-align: center;
@@ -771,6 +771,9 @@ cursor: pointer;
 margin: 0 auto;
 transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 border: none;
+}
+.visually-hidden:focus + .priv-par > span {
+    border-color: #4D5AE5; 
 }
 .submit-btn:hover,
 .submit-btn:focus {
@@ -802,9 +805,9 @@ font-size: 12px;
 line-height: 1.17; 
 letter-spacing: 0.02em;
 }
-.texar-com:focus {
+.texar-com:focus{
     border-color: #4D5AE5;
-}         
+}            
 .checkbox-container{
     margin-bottom: 24px;
 }
@@ -835,14 +838,13 @@ letter-spacing: 0.02em;
  background-color: #404bbf;
  border: none;
 } 
-.cheked-input-box:checked + label .priv-par {
-    background-color: #404bbf;
-    border: none;
+
+
+.visually-hidden:focus + .priv-par > .priv-pol {
+        border-color: #4D5AE5;
 }
-.visually-hidden:checked + .priv-par > span {
-    background-color: #404bbf;
-    border: none;
-}
+
+    
 
 .priv-link {
     display: inline;
